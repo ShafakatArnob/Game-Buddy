@@ -1,0 +1,20 @@
+*HOW TO USE REACT-REDUX (SHORT NOTE)*
+-------------------------------------
+
+
+(1) We create 2 folders -> "Actions" & "Reducers".
+
+(2) In "Actions" -> it has all the name(type) of the actions or fuctions we'll make.
+
+(3) In "Reducers" -> it has all our logical actions or functions.
+
+(4) In "Reducers/Index.js" -> we combine all the reducers/actions/functions using a Combiner-package from redux.
+
+(5) In "src/Index.js" -> we store the combined reducers (as redux-store can store only one).
+
+(6) We attach "window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()" as a 2nd parameter in the store, to run the redux-devtool-extension.
+
+(7) Now, we can access any state/variable from any component by Selecting them from the Store using Selector-package from redux.
+
+(8) We use "dispatch('action_name')" to invoke any of the functions/actions we made in the Reducers.
+
